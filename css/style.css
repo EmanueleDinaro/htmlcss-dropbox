@@ -27,7 +27,7 @@
     max-width: 100%;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: inherit;
 }
@@ -68,6 +68,16 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
 }
+h1 {
+   font-size: 70px;
+   text-align: left;
+   font-weight: 900;
+}
+
+.col.hero-left {
+    font-size: 16px;
+}
+
 
 /*----------------
     BUTTONS
@@ -94,7 +104,7 @@ body {
     HEADER
 ------------------*/
 
-header{
+header {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -102,12 +112,12 @@ header{
     padding: 20px;
 }
 
-.nav-left, .nav-right{
+.nav-left, .nav-right {
     display: flex;
     gap: 30px;
 }
 
-header ul{
+header ul {
     align-items: center;
     list-style: none;
     display: flex;
@@ -118,6 +128,34 @@ header ul{
     MAIN
 ------------------*/
 
+.hero-section {
+    background-color: #B4D0E6;
+}
+
+.hero.container {
+    position: relative;
+    bottom: -80px;
+}
+
+.col.hero-left {
+    width: 70%;
+    position: relative;
+}
+
+.hero.container .row {
+    margin-top: 50px;
+}
+
+.col.hero-left button {
+    margin: 30px 0;
+}
+
+.col.hero-left i {
+    font-size: 54px;
+    color: #000;
+    position: absolute;
+    bottom: 100px;
+}
 /*----------------
     FOOTER
 ------------------*/
