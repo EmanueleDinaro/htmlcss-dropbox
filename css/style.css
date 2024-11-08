@@ -27,6 +27,11 @@
     max-width: 100%;
 }
 
+ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*----------------
     LAYOUT
 ------------------*/
@@ -60,7 +65,8 @@
     TYPOGRAPHY
 ------------------*/
 body {
-    font-family: "Roboto", serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
 }
 
 /*----------------
@@ -70,23 +76,43 @@ body {
     background-color: transparent;
     font-family: inherit;
     border: none;
-    padding: 6px 12px;
+    padding: 6px 14px;
     cursor: pointer;
 }
 
 .btn-large {
-    padding: 10px 20px;
+    padding: 10px 24px;
     font-size: 16px;
 }
 
 .btn-primary {
-    background-color: lightcoral;
+    background-color: #0061FE;
     color: #fff;
 }
 
 /*----------------
     HEADER
 ------------------*/
+
+header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    gap: 30px;
+}
+
+header ul{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
 
 /*----------------
     MAIN
