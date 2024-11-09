@@ -124,6 +124,14 @@ h1 {
     color: #fff;
 }
 
+.btn-partner {
+    background-color: transparent;
+    font-family: inherit;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 /*----------------
     HEADER
 ------------------*/
@@ -196,11 +204,13 @@ header ul {
 /* INIZIO SECONDA SEZIONE */
 
 .business-plan.container {
-    max-width: 1000px;
     margin-top: 100px;
-    padding: 50px 0px;
 }
 
+.business-plan.container, .find-partner.container {
+    max-width: 1000px;
+    padding: 30px 0px;
+}
 .plan-choise {
     margin: 30px 0px;
 
@@ -256,11 +266,6 @@ header ul {
     font-size: 16px;
     margin: 15px 0px;
 }
-/* 
-.plan-desc .buynow {
-    margin: 30px 0px;
-
-} */
 
 .plan-desc hr {
     width: 20%;
@@ -313,8 +318,25 @@ header ul {
     font-size: 14px;
 }
 
+/* INIZIO SEZIONE FIND A PARTNER */
 
+.find-partner .col.big {
+    width: 60%;
+}
 
+.find-partner .col.small {
+    width: 40%;
+    padding: 40px;
+}
+
+.col.small h2 {
+    margin: 20px 0;
+}
+
+.col.small button {
+    margin: 25px 0;
+
+}
 /*----------------
     FOOTER
 ------------------*/
