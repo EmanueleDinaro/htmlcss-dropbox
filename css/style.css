@@ -56,6 +56,9 @@ ul li a {
 .gap-30 {
     gap: 30px;
 }
+.gap-35 {
+    gap: 35px;
+}
 
 .col {
     flex-grow: 1;
@@ -151,6 +154,7 @@ header ul {
 
 .hero-section {
     background-color: #B4D0E6;
+    position: relative;
 }
 
 .hero.container {
@@ -162,7 +166,7 @@ header ul {
 
 .col.hero-left {
     width: 70%;
-    position: relative;
+    padding-left: 10px;
 }
 
 .hero.container .row {
@@ -175,20 +179,26 @@ header ul {
 
 /* POSIZIONARE BENE IN MODO ASSOLUTO RISPETTO A COL HERO LEFT */
 
-.col.hero-left i {
+/* .col.hero-left i {
+    font-size: 54px;
+    color: #000;
+    position: absolute;
+    bottom: 100px;
+} */
+
+.hero.container i {
     font-size: 54px;
     color: #000;
     position: absolute;
     bottom: 100px;
 }
 
+/* INIZIO SECONDA SEZIONE */
+
 .business-plan.container {
     max-width: 1000px;
-    background-color: lightgray;
-    min-height: 600px;
     margin-top: 100px;
     padding: 50px 0px;
-    
 }
 
 .plan-choise {
@@ -203,56 +213,108 @@ header ul {
 /* INSERIRE QUI PROP/VAL PER CAMBIARE IL RADIO BUTTON */
 
 .business-plan.container .row {
-    background-color: #555;
-    width: 100%;
+    /* background-color: #555; */
+    margin: 30px 0 50px 0;
 }
 
 .business-plan.container .row .col{
-    background-color: #ac9fca;
+    border: 1px solid grey;
     width: 100%;
-    height: 600px;
 }
 
 .col .plan-icon {
     margin-bottom: 5px;
-    border: 2px dashed blue;
+    border-bottom: 1px solid grey;
     line-height: 2.5;
     text-align: center;
 }
 
 .col .plan-desc {
-    border: 2px dashed red;
-    height: 89%;
     padding: 15px 30px;
     line-height: 2;
 }
 
 .plan-desc ul {
-    list-style: none;
     line-height: 1.5;
     margin: 25px 0px;
+    list-style: none;
 }
 
-.plan-desc ul li {
+.plan-desc ul li/*::before*/ {
     margin: 15px 0px;
+    /* FontAwesome Unicode */
+    /* content: "\f00c"; 
+    font-family: "Font Awesome 6 Free"; */
 
 }
+
 
 .plan-desc button {
     text-align: center;
     width: 100%;
     padding: 12px 25px;
     font-size: 16px;
+    margin: 15px 0px;
 }
-
+/* 
 .plan-desc .buynow {
     margin: 30px 0px;
 
-}
+} */
 
 .plan-desc hr {
     width: 20%;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin: 30px 0px;
 }
+
+.fa-solid.fa-check {
+    color: #0061FE;
+    font-weight: 900;
+    
+}
+
+/* ULTIMA ROW BUSINESS PLAN */
+
+.row.large-container {
+    padding: 0 30px;
+}
+
+.plan-description h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plan-description {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.plan-description span.price {
+    font-weight: bold;
+}
+
+.plan-description .opacity {
+    display: block;
+    margin-top: 30px;
+    line-height: 1;
+}
+
+.col-btn {
+    flex-grow: 1;
+    position: relative;
+}
+
+.col-btn button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+}
+
+
+
 /*----------------
     FOOTER
 ------------------*/
