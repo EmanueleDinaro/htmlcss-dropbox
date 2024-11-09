@@ -103,6 +103,12 @@ h1 {
 .plan-desc .opacity{
     opacity: 0.5;
 }
+
+.dropbox-business.container h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
 /*----------------
     BUTTONS
 ------------------*/
@@ -207,7 +213,7 @@ header ul {
     margin-top: 100px;
 }
 
-.business-plan.container, .find-partner.container {
+.business-plan.container, .find-partner.container, .dropbox-business.container{
     max-width: 1000px;
     padding: 30px 0px;
 }
@@ -335,7 +341,17 @@ header ul {
 
 .col.small button {
     margin: 25px 0;
+}
 
+/* INIZIO SEZIONE DROPBOX BUSINESS */
+
+.dropbox-business.container .row {
+    margin-bottom: 40px;
+}
+
+.dropbox-business.container .col h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 /*----------------
     FOOTER
