@@ -27,6 +27,10 @@
     max-width: 100%;
 }
 
+li {
+    list-style: none;
+}
+
 ul li a {
     text-decoration: none;
     color: inherit;
@@ -39,8 +43,17 @@ ul li a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+}
+
+.business-plan.container,
+.find-partner.container,
+.dropbox-business.container,
+.find-more.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 30px 0px;
+    margin-top: 100px;
 }
 
 .row {
@@ -104,10 +117,17 @@ h1 {
     font-weight: bold;
 }
 
-.plan-desc .opacity{
+.plan-desc .opacity {
     opacity: 0.5;
 }
 
+.footer-top.container {
+    color: #fff;
+}
+
+.footer-top.container h3 {
+    font-size: 24px;
+}
 /*----------------
     BUTTONS
 ------------------*/
@@ -212,14 +232,6 @@ header ul {
     margin-top: 100px;
 }
 
-.business-plan.container,
-.find-partner.container,
-.dropbox-business.container,
-.find-more.container{
-    max-width: 1000px;
-    padding: 30px 0px;
-    margin-top: 100px;
-}
 .plan-choise {
     margin: 30px 0px;
 }
@@ -356,7 +368,50 @@ header ul {
     margin-bottom: 20px;
 }
 
+/* INIZIO SEZIONE FIND MORE */
+
+.find-more.container {
+    margin-bottom: 140px;
+}
 
 /*----------------
     FOOTER
 ------------------*/
+
+footer {
+    background-color: #000;
+}
+
+.footer-top.container {
+    padding: 100px 0px;
+}
+
+.footer-top.container .row {
+    justify-content: center;
+}
+
+.footer-top.container h3 {
+    margin-bottom: 20px;
+}
+.footer-top.container ul li {
+    line-height: 2.5;
+}
+
+footer hr {
+    width: 10%;
+    margin-top: 100px;
+}
+
+.footer-bottom.container select {
+    border-color: black;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.footer-bottom.container {
+    padding-top: 50px;
+
+}
