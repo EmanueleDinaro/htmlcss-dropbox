@@ -137,7 +137,11 @@ h1 {
     border: none;
     padding: 6px 14px;
     cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
 }
+
+
 
 .btn-large {
     padding: 10px 24px;
@@ -149,6 +153,11 @@ h1 {
     color: #fff;
 }
 
+
+.col.hero-left button {
+    margin: 30px 0;
+}
+
 .btn-partner {
     background-color: transparent;
     font-family: inherit;
@@ -157,16 +166,51 @@ h1 {
     font-size: 16px;
 }
 
+.plan-desc button {
+    text-align: center;
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 15px 0px;
+}
+
+.col.small button {
+    margin: 25px 0;
+}
+
+
+.col-btn {
+    flex-grow: 1;
+    position: relative;
+}
+
+.col-btn button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
 /*----------------
     HEADER
 ------------------*/
 
 header {
+    background-color: #fff;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 69;
 }
 
 .nav-left, .nav-right {
@@ -185,13 +229,14 @@ header ul {
     MAIN
 ------------------*/
 
+/* INIZIO SEZIONE HERO */
+
 .hero-section {
     background-color: #B4D0E6;
     position: relative;
 }
 .hero.container {
     position: relative;
-    /* bottom: -80px */
 }
 
 .col.hero-right {
@@ -199,8 +244,6 @@ header ul {
     position: relative;
     bottom: -80px
 }
-
-/* CONTROLLARE PERCHE' FORMATTANDO LA PAGINA VA SOTTO IL BG LA COL.HERO-LEFT */
 
 .col.hero-left {
     width: 40%;
@@ -211,18 +254,6 @@ header ul {
 .hero.container .row {
     margin-top: 50px;
 }
-
-.col.hero-left button {
-    margin: 30px 0;
-}
-
-/* POSIZIONARE BENE IN MODO ASSOLUTO RISPETTO A COL HERO LEFT */
-
-/* .hero.container i {
-    font-size: 54px;
-    color: #000;
-    position: relative;
-} */
 
  .fa-arrow-down {
     font-size: 54px;
@@ -247,18 +278,17 @@ header ul {
 /* INSERIRE QUI PROP/VAL PER CAMBIARE IL RADIO BUTTON */
 
 .business-plan.container .row {
-    /* background-color: #555; */
     margin: 30px 0 50px 0;
 }
 
 .business-plan.container .row .col{
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
 .col .plan-icon {
     margin-bottom: 5px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     line-height: 2.5;
     text-align: center;
 }
@@ -274,23 +304,11 @@ header ul {
     list-style: none;
 }
 
-.plan-desc ul li/*::before*/ {
+.plan-desc ul li {
     margin: 15px 0px;
-    /* FontAwesome Unicode */
-    /* content: "\f00c"; 
-    font-family: "Font Awesome 6 Free"; */
     display: flex;
     gap: 5px;
     align-items: baseline;
-}
-
-
-.plan-desc button {
-    text-align: center;
-    width: 100%;
-    padding: 12px 25px;
-    font-size: 16px;
-    margin: 15px 0px;
 }
 
 .plan-desc hr {
@@ -331,19 +349,6 @@ header ul {
     line-height: 1;
 }
 
-.col-btn {
-    flex-grow: 1;
-    position: relative;
-}
-
-.col-btn button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 12px 30px;
-    font-size: 14px;
-}
-
 /* INIZIO SEZIONE FIND A PARTNER */
 
 .find-partner .col.big {
@@ -359,14 +364,13 @@ header ul {
     margin: 20px 0;
 }
 
-.col.small button {
-    margin: 25px 0;
-}
 
 /* INIZIO SEZIONE DROPBOX BUSINESS */
 
 .dropbox-business.container .row {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 70px;
 }
 
 .dropbox-business.container .col h3 {
