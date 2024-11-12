@@ -370,7 +370,12 @@ header ul {
 .dropbox-business.container .row {
     margin-bottom: 50px;
     display: flex;
-    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.dropbox-business.container .col {
+    width: calc(100%/3);
+    padding: 15px;
 }
 
 .dropbox-business.container .col h3 {
